@@ -1,0 +1,21 @@
+{
+  "name": "Bifrost",
+  "version": "1.0.0",
+  "description": "Bifrost Landing Page with Mail Service",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'No build needed for static assets'",
+    "start": "node api/mail.js"
+  },
+  "dependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "nodemailer": "^6.9.7",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "typescript": "^6.0.2"
+  },
+  "devDependencies": {
+    "vercel": "^34.0.0"
+  }
+}
